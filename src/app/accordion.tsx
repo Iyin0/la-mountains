@@ -19,7 +19,7 @@ const MountainsAccordion: React.FunctionComponent<MountainsAccordionProps> = () 
 
     return (
         <div className={styles.carouselMobile}>
-            <Accordion.Root className={styles.AccordionRoot} type="single" defaultValue="item-1" collapsible>
+            <Accordion.Root className={styles.AccordionRoot} type="single" collapsible>
                 <Accordion.Item className={styles.AccordionItem} value="item-1">
                     <Accordion.Header className={styles.AccordionHeader}>
                         <Accordion.Trigger className={styles.AccordionTrigger}>
