@@ -3,14 +3,20 @@
 import styles from './page.module.scss'
 import * as Accordion from '@radix-ui/react-accordion';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
-import { imageList } from './page';
 import Image from 'next/image';
+import carousel1 from './assets/Group10.png'
+import carousel2 from './assets/Group8.png'
+import carousel3 from './assets/Group10.png'
+import carousel4 from './assets/Group8.png'
 
 interface MountainsAccordionProps {
 
 }
 
 const MountainsAccordion: React.FunctionComponent<MountainsAccordionProps> = () => {
+
+    const imageList = [carousel1, carousel2, carousel3, carousel4]
+
     return (
         <div className={styles.carouselMobile}>
             <Accordion.Root className={styles.AccordionRoot} type="single" defaultValue="item-1" collapsible>

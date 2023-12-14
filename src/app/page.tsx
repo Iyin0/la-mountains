@@ -11,8 +11,6 @@ import footerLogo from './assets/FooterLogo.png'
 import MountainsTabs from './tabs'
 import MountainsAccordion from './accordion'
 
-export const imageList = [carousel1, carousel2, carousel3, carousel4]
-
 export default function Home() {
   const links = [
     {
@@ -24,6 +22,8 @@ export default function Home() {
       link: '/#team'
     },
   ]
+
+  const imageList = [carousel1, carousel2, carousel3, carousel4]
 
   return (
     <main className={styles.main}>
