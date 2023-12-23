@@ -76,8 +76,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={oswald.className}>
-        {children}
         <Analytics />
+        {children}
       </body>
     </html>
   )
