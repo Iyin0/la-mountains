@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Oswald } from 'next/font/google'
 import './globals.css'
+import { Analytics } from '@vercel/analytics/react';
 
 const oswald = Oswald({ subsets: ['latin'] })
 
@@ -74,7 +75,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={oswald.className}>{children}</body>
+      <body className={oswald.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
